@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EduSpark Design System - Beautiful pastel blue theme for rural STEM education
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 27%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+    --card-shadow: 215 25% 27% / 0.08;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Primary Brand - Pastel Blue */
+    --primary: 215 89% 68%;
+    --primary-light: 215 89% 78%;
+    --primary-dark: 215 89% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Soft Purple Accent */
+    --secondary: 250 60% 85%;
+    --secondary-foreground: 215 25% 27%;
+
+    /* Success & Growth Colors */
+    --success: 145 63% 68%;
+    --success-light: 145 63% 78%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Fun Orange */
+    --warning: 35 91% 68%;
+    --warning-light: 35 91% 78%;
+    --warning-foreground: 215 25% 27%;
+
+    /* Muted Backgrounds */
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 15% 50%;
+
+    /* Accent - Interactive Elements */
+    --accent: 175 70% 85%;
+    --accent-foreground: 215 25% 27%;
+
+    /* Destructive */
+    --destructive: 0 84% 68%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 215 20% 88%;
+    --input: 215 20% 92%;
+    --ring: 215 89% 68%;
+
+    /* Gamification Colors */
+    --xp-gold: 45 86% 68%;
+    --badge-silver: 210 20% 78%;
+    --level-purple: 270 60% 68%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 89% 68%), hsl(175 70% 75%));
+    --gradient-success: linear-gradient(135deg, hsl(145 63% 68%), hsl(145 63% 78%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(215 20% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 89% 68% / 0.1), hsl(175 70% 75% / 0.1));
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(215 25% 27% / 0.04);
+    --shadow-md: 0 4px 16px hsl(215 25% 27% / 0.08);
+    --shadow-lg: 0 8px 24px hsl(215 25% 27% / 0.12);
+    --shadow-glow: 0 0 24px hsl(215 89% 68% / 0.3);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode - Soft dark theme for better rural device compatibility */
+    --background: 215 25% 8%;
+    --foreground: 215 20% 95%;
+
+    --card: 215 25% 10%;
+    --card-foreground: 215 20% 95%;
+    --card-shadow: 0 0 0 / 0;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 215 20% 95%;
+
+    --primary: 215 89% 78%;
+    --primary-light: 215 89% 88%;
+    --primary-dark: 215 89% 68%;
+    --primary-foreground: 215 25% 8%;
+
+    --secondary: 250 60% 75%;
+    --secondary-foreground: 215 25% 8%;
+
+    --success: 145 63% 78%;
+    --success-light: 145 63% 88%;
+    --success-foreground: 215 25% 8%;
+
+    --warning: 35 91% 78%;
+    --warning-light: 35 91% 88%;
+    --warning-foreground: 215 25% 8%;
+
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 175 70% 75%;
+    --accent-foreground: 215 25% 8%;
+
+    --destructive: 0 84% 78%;
+    --destructive-foreground: 215 25% 8%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 15%;
+    --ring: 215 89% 78%;
+
+    /* Dark Gamification Colors */
+    --xp-gold: 45 86% 78%;
+    --badge-silver: 210 20% 68%;
+    --level-purple: 270 60% 78%;
+
+    /* Dark Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 89% 78%), hsl(175 70% 85%));
+    --gradient-success: linear-gradient(135deg, hsl(145 63% 78%), hsl(145 63% 88%));
+    --gradient-card: linear-gradient(145deg, hsl(215 25% 10%), hsl(215 25% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 89% 78% / 0.1), hsl(175 70% 85% / 0.1));
+
+    /* Dark Shadows */
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 16px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 8px 24px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 24px hsl(215 89% 78% / 0.2);
+
+    /* Sidebar colors for consistency */
+    --sidebar-background: 215 25% 10%;
+    --sidebar-foreground: 215 20% 95%;
+    --sidebar-primary: 215 89% 78%;
+    --sidebar-primary-foreground: 215 25% 8%;
+    --sidebar-accent: 215 25% 15%;
+    --sidebar-accent-foreground: 215 20% 95%;
+    --sidebar-border: 215 25% 20%;
+    --sidebar-ring: 215 89% 78%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+  }
+
+  /* Smooth scrolling for better UX */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom utility classes for EduSpark */
+@layer components {
+  /* Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-glow transition-all duration-300 transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary/80 text-secondary-foreground px-6 py-3 rounded-xl font-medium hover:bg-secondary transition-all duration-300;
+  }
+
+  /* Card Styles */
+  .card-elevated {
+    @apply bg-gradient-to-br from-card to-muted/50 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border border-border/50;
+  }
+
+  .card-interactive {
+    @apply card-elevated cursor-pointer hover:scale-[1.02] transform-gpu;
+  }
+
+  /* Progress Bars */
+  .progress-bar {
+    @apply bg-muted rounded-full overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply bg-gradient-to-r from-success to-success-light h-full rounded-full transition-all duration-500 ease-out;
+  }
+
+  /* XP and Gamification */
+  .xp-badge {
+    @apply bg-gradient-to-r from-yellow-400 to-yellow-500 text-yellow-900 px-3 py-1 rounded-full text-sm font-bold shadow-md;
+  }
+
+  .level-badge {
+    @apply bg-gradient-to-r from-purple-500 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md;
+  }
+
+  /* Animation Classes */
+  .slide-in-up {
+    @apply animate-[slide-up_0.6s_ease-out_forwards];
+  }
+
+  .fade-in-scale {
+    @apply animate-[fade-scale_0.5s_ease-out_forwards];
+  }
+
+  .bounce-gentle {
+    @apply animate-[bounce-soft_2s_ease-in-out_infinite];
+  }
+}
+
+/* Custom Keyframes */
+@layer utilities {
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-scale {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes bounce-soft {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+}
